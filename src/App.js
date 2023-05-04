@@ -1,6 +1,7 @@
 import './App.scss';
 import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer';
+import Intr from './components/introduction/Intr';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
 
 			<div className='app-container'>
 
-				
+				<Intr />
 
 			</div>
 
