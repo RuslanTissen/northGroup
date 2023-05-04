@@ -47,6 +47,7 @@
 			margin: 0 10px;
 			border-radius: 0;
 			font-size: .6rem;
+			transition: ease-in-out .3s;
 		}
 		a:hover{
 			background-color: opacify($color: #000000, $amount: 0);
