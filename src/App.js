@@ -3,6 +3,7 @@ import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer';
 import Intr from './components/introduction/Intr';
 import FrontMan from './components/frontMan/Frontman';
+import House from './components/house/House';
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
 				<Intr />
 
 				<FrontMan />
+
+				<House />
 
 			</div>
 

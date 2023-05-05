@@ -4,6 +4,7 @@
   height: fit-content;
   padding: 0 15px;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-height: 900px) {
   .app .app-container {

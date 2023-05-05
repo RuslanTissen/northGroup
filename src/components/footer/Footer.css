@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgb(84, 84, 84);
+  background-color: #202020;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -42,13 +42,11 @@
   display: flex;
   align-items: center;
   color: white;
-  font-size: 0.7em;
 }
-.footer .studio a img {
-  width: 60px;
-  height: 60px;
-  margin: 0 5px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding-bottom: 10px;
+.footer .studio a mark {
+  background: transparent;
+  color: white;
+  margin: 0 10px 15px 7px;
+  font-size: 2rem;
+  font-family: "League Gothic", sans-serif;
 }/*# sourceMappingURL=Footer.css.map */

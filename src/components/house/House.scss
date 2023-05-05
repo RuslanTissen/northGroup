@@ -1,0 +1,36 @@
+.house {
+	height: fit-content;
+	font-family: 'Sorts Mill Goudy', serif;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px 0 0 0;
+	&__images-container {
+		height: 600px;
+		flex: 1 1 100%;
+		.img-box{
+			height: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				width: 80%;
+				height: 80%;
+				display: block;
+			}
+		}
+	}
+
+	&__text-container {
+		height: 600px;
+		flex: 1 1 100%;
+		.house__ditales-container{
+			.bads {
+			}
+			.baths {
+			}
+			.parking {
+			}
+			
+		}
+	}
+}
