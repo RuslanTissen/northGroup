@@ -4,6 +4,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: 50px 0 0 0;
+	position: relative;
 	&__images-container {
 		height: 600px;
 		flex: 1 1 100%;
@@ -21,16 +22,139 @@
 	}
 
 	&__text-container {
-		height: 600px;
+		height: 300px;
+		width: fit-content;
 		flex: 1 1 100%;
+		position: absolute;
+		// right: 60px;
+		display: flex;
+		align-items: center;
+		left: 0;
+	  	right: 0;
+  		margin: 0 auto;
+		.text-box{
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: black;
+			opacity: .45;
+			color: white;
+			padding: 0 20px;
+
+		}
 		.house__ditales-container{
+			display: flex;
 			.bads {
 			}
 			.baths {
+				margin: 0 10px;
 			}
 			.parking {
 			}
 			
 		}
 	}
+	&__plan-container {
+		height: 400px;
+		flex: 1 1 100%;
+	
+		.img-box{
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				width: 80%;
+				height: 80%;
+				display: block;
+			}
+		}
+	}
+	@media (min-width:600px) {
+		&__images-container {
+			height: 700px;
+		}
+		&__text-container {
+			height: 350px;
+		}
+		&__plan-container {
+			height: 450px;
+		}
+	}
+	@media (min-width:700px) {
+		&__images-container {
+			height: 800px;
+		}
+		&__text-container {
+			height: 400px;
+		}
+		&__plan-container {
+			height: 500px;
+		}
+	}
+	@media (min-width:800px) {
+		&__images-container {
+			height: 50vh;
+		}
+		&__text-container {
+			height: 25vh;
+		}
+		&__plan-container {
+			height: 35vh;
+		}
+	}
+	@media (min-width:900px) {
+		&__images-container {
+			flex: 1 1 50%;
+			height: 1000px;
+		}
+		&__text-container {
+			height: 500px;
+			left: 120px;
+	  		// right: 0;
+  			margin: 0;
+		}
+		&__plan-container {
+			flex: 1 1 50%;
+			height: 1000px;
+			.img-box{
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img{
+					width: 100%;
+					max-width: 600px;
+					height: 50%;
+					display: block;
+				}
+			}
+		}
+	}
+
+
+
+	// @media (min-width:900px) {
+	// 	&__images-container {
+	// 		height: 1000px;
+	// 	}
+	// 	&__text-container {
+	// 		height: 500px;
+	// 	}
+	// 	&__plan-container {
+	// 		height: 570px;
+	// 	}
+	// }
+	// @media (min-width:1000px) {
+	// 	&__images-container {
+	// 		height: 1100px;
+	// 	}
+	// 	&__text-container {
+	// 		height: 550px;
+	// 	}
+	// 	&__plan-container {
+	// 		height: 650px;
+	// 	}
+	// }
 }
