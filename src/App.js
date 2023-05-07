@@ -4,6 +4,7 @@ import Footer from './components/footer/Footer';
 import Intr from './components/introduction/Intr';
 import FrontMan from './components/frontMan/Frontman';
 import House from './components/house/House';
+import Districts from './components/districts/Districts';
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
 				<FrontMan />
 
 				<House />
+
+				<Districts />
 
 			</div>
 
