@@ -8,6 +8,7 @@
 	&__images-container {
 		height: 600px;
 		flex: 1 1 100%;
+		position: relative;
 		.img-box{
 			height: 50%;
 			display: flex;
@@ -17,6 +18,54 @@
 				width: 80%;
 				height: 80%;
 				display: block;
+			}
+		}
+		.img-box2{
+			.test {
+				position: absolute;
+				width: 50%;
+				display: flex;
+				.test-point-container {
+					width: 15px;
+					height: 15px;
+					background-color: black;
+					border-radius: 50%;
+					opacity: .3;
+					border: 1px solid black;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					transition: ease-in-out .3s ;
+					margin: 0 10px;
+					position: relative;
+					.test-point {
+						width: 5px;
+						height: 5px;
+						border-radius: 50%;
+						background-color: white;
+						transition: ease-in-out .3s ;
+					}
+				}
+				.test-point-container:hover{
+					border: 1px solid white;
+					.test-point{
+						width: 4px;
+						height: 4px;
+					}
+				}
+				.test-text-container {
+					position: absolute;
+					width: 80px;
+					padding: 5px;
+					background-color: rgb(39, 38, 38);
+					margin-left: 30px;
+					transition: ease-in-out .3s ;
+					transition-delay: .5s;
+					p{
+						font-size: .5rem;
+						color: rgb(229, 226, 226);
+					}
+				}
 			}
 		}
 	}
@@ -98,6 +147,32 @@
 		&__images-container {
 			flex: 1 1 50%;
 			height: 1000px;
+			.img-box2{
+				.test {
+					.test-point-container {
+						width: 25px;
+						height: 25px;
+						.test-point {
+							width: 8px;
+							height: 8px;
+						}
+					}
+					.test-point-container:hover{
+						.test-point{
+							width: 7px;
+							height: 7px;
+						}
+					}
+					.test-text-container {
+						width: 100px;
+						margin-left: 40px;
+						padding: 7px;
+						p{
+							font-size: .8rem
+						}
+					}
+				}
+			}
 		}
 		&__text-container {
 			height: 500px;
@@ -124,6 +199,11 @@
 			}
 		}
 	}
+
+
+
+
+	
 
 
 

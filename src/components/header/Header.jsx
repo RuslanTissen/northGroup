@@ -20,24 +20,24 @@ function Header() {
 					<li className="detalles"><AnchorLink href="#templates">{trans[lang].model}</AnchorLink></li>
 					<li className="contacto"><AnchorLink href="#plan">{trans[lang].pricing}</AnchorLink></li>
 					<li className='sprachen'>
-						<button className="button-esp" value="es" onClick={(e)=>setLang(e.target.value)}>ESP</button>
+						<button className="button-esp" value="es" onClick={(e) => setLang(e.target.value)}>ESP</button>
 						<p>/</p>
-						<button className="button-eng" value="en" onClick={(e)=>setLang(e.target.value)}> ENG</button>
+						<button className="button-eng" value="en" onClick={(e) => setLang(e.target.value)}> ENG</button>
 						{/* <button className="button-ger" value="gr" onClick={(e)=>setLang(e.target.value)}>GER</button> */}
 					</li>
-				<GiHamburgerMenu style={{ fontSize: "1.5em" }} onClick={() => setShow(!show)} />
-			</ul >
-			{show && <ul className='ul-second'>
-				<li className="alq"><AnchorLink href="#idea">{trans[lang].process}</AnchorLink> </li>
-				<li className="detalles"><AnchorLink href="#templates">{trans[lang].model}</AnchorLink></li>
-				<li className="contacto"><AnchorLink href="#plan">{trans[lang].pricing}</AnchorLink></li>
-				<li className='sprachen'>
-						<button className="button-esp" value="es" onClick={(e)=>setLang(e.target.value)}>ESP</button>
+					<GiHamburgerMenu style={{ fontSize: "1.5em" }} onClick={() => setShow(!show)} />
+				</ul >
+				{show && <ul className='ul-second'>
+					<li className="alq"><AnchorLink href="#idea">{trans[lang].process}</AnchorLink> </li>
+					<li className="detalles"><AnchorLink href="#templates">{trans[lang].model}</AnchorLink></li>
+					<li className="contacto"><AnchorLink href="#plan">{trans[lang].pricing}</AnchorLink></li>
+					<li className='sprachen'>
+						<button className="button-esp" value="es" onClick={(e) => setLang(e.target.value)}>ESP</button>
 						<p>/</p>
-						<button className="button-eng" value="en" onClick={(e)=>setLang(e.target.value)}> ENG</button>
+						<button className="button-eng" value="en" onClick={(e) => setLang(e.target.value)}> ENG</button>
 						{/* <button className="button-ger" value="gr" onClick={(e)=>setLang(e.target.value)}>GER</button> */}
 					</li>			</ul>}
-		</div>
+			</div>
 		</div >
 	)
 }
